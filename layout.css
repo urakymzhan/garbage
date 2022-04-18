@@ -1,0 +1,34 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    background-color: rgba(255, 200, 0, 0.698);
+    margin: 0;
+    padding: 0;
+    /* display: inline; */
+}
+p {
+    /* display: inline; */
+    background-color: rgb(129, 200, 202);
+}
+
+span, a  {
+    background-color: lightsalmon;
+    /* display: block; */
+}
+
+#hide {
+    /* display: none; */
+    /* visibility: hidden; */
+    /* opacity: 0; */
+}
+
+#lorem {
+    /* default = inline element */
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    /* padding-right: 50px; */
+    /* margin: 10px; */
+}
