@@ -1,0 +1,74 @@
+.pseudo-class:hover {
+    /* background-color: antiquewhite; */
+    /* width: 800px; */
+} 
+.pseudo-class p:hover {
+    color: darkgoldenrod;
+}
+
+a {
+    font-size: 46px;
+    text-decoration: none;
+}
+
+a:link {
+    color: darkblue;
+}
+
+a:visited {
+    color: green;
+}
+
+a:active {
+    color: blueviolet;
+    text-decoration: underline;
+}
+a:hover {
+    opacity: 0.5;
+    font-size: 12px;
+}
+
+/* first child and last child */
+
+ul {
+    font-size: 30px;
+}
+ ul li:first-child {
+     color: red;
+ }
+
+ ul li:last-child {
+     color: green;
+ }
+
+ol li:nth-child(even) {
+    color: greenyellow;
+}
+ol li:nth-child(odd) {
+    font-weight: 900;
+}
+.ps-class-box {
+    font-size: 30px;
+}
+ p:nth-of-type(2) {
+    color:brown;
+}
+/* .ps-class-box p:nth-child(2) {
+    color:brown;
+} */
+
+/* pseudo elements */
+ul li::before {
+    content: "$ "
+}
+ul li::after {
+    content: " CAD"
+}
+
+#first::first-line {
+    color: gray;
+}
+
+#first::first-letter {
+    color: red;
+}
