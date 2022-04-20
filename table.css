@@ -1,5 +1,5 @@
 table {
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 /* thead {
     background-color: #fff;
@@ -22,15 +22,25 @@ th, td {
     padding:10px;
     text-align: left;
 }
+
 /* 
 redundant
 tr {
     border: 1px solid;
 } */
 
-th {
-    text-align: left;
+tr:nth-child(odd) {
+    background-color: blueviolet;
 }
 
-td {
+th {
+    background-color: green;
 }
+
+
+ /* th:nth-child(odd) {
+    background-color: blueviolet;
+ }
+ td:nth-child(odd) {
+    background-color: blueviolet;
+ } */
