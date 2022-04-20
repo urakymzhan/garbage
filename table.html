@@ -8,6 +8,78 @@
     <link rel="stylesheet" href="table.css">
 </head>
 <body>
-    
+    <h1>Table</h1>
+
+    <table>
+        <caption>Horizontal Table</caption>
+        <colgroup>
+            <!-- <col span="1" style="background: lightblue">
+            <col span="1" style="background: lightcoral">
+            <col span="1" style="background: lightgreen"> -->
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Country</th>
+                <th colspan="2">H & W</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Max</td>
+                <td>20</td>
+                <td>USA</td>
+                <td>180</td>
+                <td>80</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Joe</td>
+                <td>30</td>
+                <td>UK</td>
+                <td>170</td>
+                <td>70</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br>
+
+    <table>
+        <caption>Vertical Table</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <td>Max</td>
+                <td>Joe</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Age</th>
+                <td>20</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Country</th>
+                <td>USA</td>
+                <td>UK</td>
+            </tr>       
+            <tr>
+                <th rowspan="2">H & W</th>
+                <td>180</td>
+                <td>170</td>
+            </tr>
+            <tr>
+                <td>80</td>
+                <td>70</td>
+            </tr>
+        </tfoot>
+    </table>
+
 </body>
 </html>
