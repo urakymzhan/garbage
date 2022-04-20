@@ -8,6 +8,94 @@
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
-    
+    <h1>Forms</h1>
+
+    <form>
+        <div class="row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Name">   
+        </div>
+        <div class="row">
+            <label for="fname">Last Name</label>
+            <input id="fname" name="fname" type="text" placeholder="Last Name">
+        </div>
+
+        <div class="row">
+            <label for="age">Age</label>
+            <input type="number" name="age" placeholder="Age" pattern="/[0-9]/ just an example">
+        </div>
+
+        <div class="row">
+            <label for="email">Email</label>
+            <input type="email" name="email">
+        </div>
+        <div class="row">
+            <label for="password">Password</label>
+            <input type="password" name="password">
+        </div>
+        <div class="row">
+            <p>Pick your fav color: </p>
+            <label for="red">Red</label>
+            <input type="checkbox" id="red" name="red">
+            <label for="blue">Blue</label>
+            <input type="checkbox" id="blue" name="blue">
+            <label for="orange">Orange</label>
+            <input type="checkbox" id="orange" name="orange">
+        </div>
+
+        <div class="row">
+            <label for="color">Pick your color</label>
+            <input type="color" id="color" name="color">
+        </div>
+
+        <div class="row">
+            <label for="date">Pick your arrival date</label>
+            <input type="date" id="date" min="2000-01-02" min="2022-12-20" name="date">
+        </div>
+
+        <div class="row">
+            <label for="file">Upload your resume</label>
+            <input type="file" id="file" name="file">
+        </div>
+        
+        <div class="row">
+            <label>Do you have background in frontend development ?</label>
+            <br>
+            <label for="yes">Yes</label>
+            <input type="radio" name="experience" id="yes" value="Yes">
+            <label for="no">No</label>
+            <input type="radio" name="experience" id="no" value="No">
+        </div>
+
+        <div class="row">
+            <label for="comment">Leave Comment</label>
+            <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+        </div>
+
+        <div class="row">
+            <label for="title">Select your dream title ?</label>
+            <select name="title" id="title">
+                <option value="ceo">CEO</option>
+                <option value="hr">HR</option>
+                <option value="sales">Sales</option>
+                <option value="engineer">Engineer</option>
+            </select>
+        </div>
+
+        <!-- contenteditable -->
+        <div class="row">
+            <blockquote contenteditable="true">
+                <p>Edit this content to add your own quote</p>
+            </blockquote>
+            
+            <cite contenteditable="true">-- Write your own name here</cite>
+        </div>
+        <div class="row">
+            <!-- <input type="button" value="Submit">  OR -->
+            <button>Submit</button>
+        </div>
+    </form>
+
+
 </body>
 </html>
