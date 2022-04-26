@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* parent */
+.container {
+    display: grid;
+    /* grid-template-columns: 100px 100px 100px; */
+    /* grid-template-columns: repeat(3, 100px); */
+    /* grid-template-columns: repeat(3, 33.3%); */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 100px);
+    border: 3px solid red;
+    max-width: 600px;
+    /* width: 600px; */
+    height: auto;
+
+    /* justify-items: end;
+    align-items: end; */
+
+    /* justify-content: center; */
+    /* align-content: center; */
+} 
+
+/* children */
+.cell {
+    padding: 10px;
+    background-color: darkcyan;
+    border: 1px solid;
+    /* width: 40px; */
+    height: 40px;
+}
+.cell:nth-of-type(1) {
+    /* grid-column-start: 1; */
+    /* grid-column-end: 4; */
+    grid-column: 1 / 4;
+    /* grid-row-start: 1; */
+    /* grid-row-end: 2; */
+    grid-row: 1 / 2;
+    background-color: blueviolet;
+}
+.cell:nth-of-type(2) {
+    background-color: lightcoral;
+    /* grid-row-start: 2; */
+    /* grid-row-end: 4;  */
+    grid-row: 2 / 4;
+}
+.cell:nth-of-type(5) {
+    background-color: black;
+    color: #fff;
+    /* grid-column-start: 2;
+    grid-column-end: 4; */
+    grid-column: 2 / 4;
+}
+.cell:nth-of-type(7) {
+    /* justify-self: center;
+    align-self: center; */
+    place-self: start center; /* align justify */
+}
+
+/* .page {
+    height: 100vh;
+    display: grid;
+    border: 1px solid;
+    grid-template-areas: 
+    "header header header"
+    "sidebar content content"
+    "footer footer footer";
+    you can use it
+    grid-template-columns: 80px 100px 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-gap: 10px;
+}
+.page > * {
+    border: 1px solid green;
+    background-color: azure;
+}
+
+header {
+    grid-area: header;
+}
+aside {
+    grid-area: sidebar;
+}
+main {
+    grid-area: content;
+}
+footer {
+    grid-area: footer;
+} */
