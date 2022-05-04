@@ -1,0 +1,15 @@
+// MIXINS
+
+@mixin bgColor($bgColor) {
+    background-color: $bgColor;
+}
+
+@mixin btnColor($color) {
+    color: $color
+}
+
+@mixin centerDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,19 @@
+@use './style/components/buttons';
+@use './style/components/cards';
+@use './style/layout/main.scss';
+
+@use './style/artifacts/mixins';
+
+.container {
+    @include mixins.centerDiv;
+    width: 400px;
+    height: auto;
+    border: 1px solid;
+}
+
+.buttons {
+    @include mixins.centerDiv;
+    width: 400px;
+    height: auto;
+    border: 1px solid;
+}

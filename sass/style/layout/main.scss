@@ -1,0 +1,6 @@
+@use '../partials/variables' as v;
+
+body {
+    color: v.$main_color;
+}
+

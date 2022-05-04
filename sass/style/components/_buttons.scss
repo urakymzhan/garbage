@@ -1,0 +1,22 @@
+@use '../artifacts/mixins' as m;
+
+%common {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+.success {
+    @include m.bgColor(green);
+    @include m.btnColor(#fff);
+    @extend %common;
+}
+.error {
+    @include m.bgColor(red);
+    @include m.btnColor(#fff);
+    @extend %common;
+}
+.warning {
+    @include m.bgColor(yellow);
+    @include m.btnColor(#000);
+    @extend %common;
+}
