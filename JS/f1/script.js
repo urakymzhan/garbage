@@ -72,12 +72,12 @@ const counter = function () {
         }
     }
 }
-
-console.log(counter().get_value()); // 0
-console.log(counter().increment());
-console.log(counter().get_value()); // 1
-console.log(counter().increment());
-console.log(counter().get_value()); // 2
+let cc = counter();
+console.log(cc.get_value()); // 0
+console.log(cc.increment());
+console.log(cc.get_value()); // 1
+console.log(cc.increment());
+console.log(cc.get_value()); // 2
 
 
 // IIFE
